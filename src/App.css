@@ -1,0 +1,173 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Catamaran:400,100,300');
+
+/* General global */
+html, body {
+    font-family: "Catamaran", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    background-color: #eee;
+    text-align: left;
+}
+
+.container {
+    width: 970px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header-big {
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 15px 0;
+}
+
+.header-small {
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+
+/* General */
+
+/* Navbars */
+.navbar {
+    position: relative;
+    min-height: 50px;
+    background-color: #0b102b;
+}
+
+.nav {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.nav > li {
+    float: left;
+}
+
+.nav > li > a {
+    font-size: 16px;
+    font-weight: 100;
+    padding: 15px 35px;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+/* Navbars */
+
+/* Footer */
+footer {
+    margin-top: 60px;
+    width: 100%;
+    background-color: #fff;
+    text-align: right;
+    padding: 5px 0;
+}
+
+/* Footer */
+
+
+/* Products */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 25%;
+    background: white;
+    margin: 1%;
+    text-align: center;
+    flex: 1 0 23%;
+}
+
+.product img {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.product p.price {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 28px;
+    color: #00a1b4;
+    padding: 3px 0px;
+}
+/* Products */
+
+
+/* Catalog */
+.catalog {
+    display: flex;
+}
+
+.filter {
+    background-color: #f7f7f7;
+    padding: 5px 15px 20px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-header .clear {
+    color: #00a1b4;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.column-left {
+    width: 25%;
+}
+
+.column-right {
+    width: 75%;
+}
+
+/* Catalog */
+
