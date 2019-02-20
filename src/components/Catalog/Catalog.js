@@ -18,7 +18,7 @@ class Catalog extends React.Component {
     const value = event.target.value;
     this.setState({
       filterName: value,
-      products: ProductsService.getProductService(
+      products: ProductsService.getFilteredProducts(
         value,
         this.state.filterManufacturer
       )
@@ -29,7 +29,10 @@ class Catalog extends React.Component {
     const value = event.target.value;
     this.setState({
       filterManufacturer: value,
-      products: ProductsService.getProductService(this.state.filterName, value)
+      products: ProductsService.getFilteredProducts(
+        this.state.filterName,
+        value
+      )
     });
   };
 
@@ -51,7 +54,7 @@ class Catalog extends React.Component {
             <div className="filter">
               <div className="filter-header">
                 <h4>Search</h4>
-                <a href="" className="clear" onClick={this.handleClearClick}>
+                <a href="#" className="clear" onClick={this.handleClearClick}>
                   Clear
                 </a>
               </div>

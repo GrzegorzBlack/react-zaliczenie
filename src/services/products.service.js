@@ -17,7 +17,7 @@ class ProductsService {
     );
   }
 
-  static getProductService(name, manufacture) {
+  static getFilteredProducts(name, manufacture) {
     let filteredProducts = products;
     if (name.length) {
       filteredProducts = filteredProducts.filter(product =>
